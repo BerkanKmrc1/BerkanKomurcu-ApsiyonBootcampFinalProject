@@ -1,0 +1,18 @@
+﻿@model HousingViewDto
+
+
+
+@foreach (var item in Model.Items)
+{
+<div class="row">
+    <div class="col-6">
+        Id @item.HousingId
+    </div>
+    <div class="col-6">
+        Name @item.HousingName
+    </div>
+</div>
+} 
+
+
+<a href="/order/payment">Ödeme</a>

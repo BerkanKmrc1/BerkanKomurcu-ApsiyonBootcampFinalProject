@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zay Shop eCommerce HTML CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="~/img/apple-icon.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.png">
+
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/css/templatemo.css" rel="stylesheet" />
+
+    <link href="~/css/custom.css" rel="stylesheet" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+    <!--
+
+    TemplateMo 559 Zay Shop
+
+    https://templatemo.com/tm-559-zay-shop
+
+    -->
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    @await Html.PartialAsync("_TopNav")
+    <!-- Close Top Nav -->
+    <!-- Header -->
+    @await Html.PartialAsync("_Header")
+    <!-- Close Header -->
+    <!-- Modal -->
+    @*<div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="w-100 pt-1 mb-5 text-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                        <button type="submit" class="input-group-text bg-success text-light">
+                            <i class="fa fa-fw fa-search text-white"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>*@
+
+
+
+    <!-- Start Banner Hero -->
+    @await Html.PartialAsync("_Banner")
+    <!-- End Banner Hero -->
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        @RenderBody()
+        @*<div class="row text-center pt-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Categories of The Month</h1>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
+                    <h5 class="text-center mt-3 mb-3">Watches</h5>
+                    <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
+                    <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                </div>
+            </div>*@
+    </section>
+    <!-- End Categories of The Month -->
+    <!-- Start Featured Product -->
+    @await Html.PartialAsync("_Featured")
+    <!-- End Featured Product -->
+    <!-- Start Footer -->
+    <!-- End Footer -->
+    <!-- Start Script -->
+
+    <script src="~/js/jquery-1.11.0.min.js"></script>
+
+    <script src="~/js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/templatemo.js"></script>
+
+    <script src="~/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
+
+
+
+
+@await RenderSectionAsync("Scripts", required: false)

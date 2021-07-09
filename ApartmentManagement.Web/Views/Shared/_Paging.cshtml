@@ -1,0 +1,23 @@
+﻿@model PagingViewModel
+<div div="row">
+    <ul class="pagination pagination-lg justify-content-end">
+
+        @for (int i = 0; i < Model.TotalPageCount; i++)
+        {
+            <li class="page-item @(i == Model.CurrentPage ? "disabled": "") ">
+                <a class="page-link @(i == Model.CurrentPage ? "active": "") rounded-0 mr-3 shadow-sm border-top-0 border-left-0"
+                   href="/product/index?page=@i" 
+
+                   tabindex="-1">@(i+1)</a>
+            </li>
+        }
+
+
+        @*<li class="page-item">
+            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+        </li>*@
+    </ul>
+</div>

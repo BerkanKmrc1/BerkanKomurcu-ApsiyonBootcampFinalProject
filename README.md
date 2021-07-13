@@ -40,5 +40,5 @@ Sistem kullanılmaya başladığında ilk olarak
 4.Ay bazlı olarak aidat bilgilerini girer.
 5.Ay bazlı olarak fatura bilgilerini girer
 
-
+USED
 Proje .NET CORE MVC teknolojisiyle geliştirilmiştir.Projede Code FİRST, Entity Framework, MSSQL JWT, IdentityCore, MongoDb, Dependency İnjection, UnitOfWork gibi teknolojiler, toollar ve design patternlar kullanılmıştır.
